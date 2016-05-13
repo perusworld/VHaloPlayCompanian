@@ -8,8 +8,20 @@
     <script src="lib/winjs-4.0.1/js/ui.js"></script>
     <link href="css/default.css" rel="stylesheet" />
     <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body class="win-type-body">
-    <div>Content goes here!</div>
+    <section>
+        <h3>Host</h3> <input id="hostName" type="text" value="localhost" />
+    </section>
+    <section>
+        <h3>Video ID</h3> <input id="videoId" type="text" value="UkWd0azv3fQ" />
+    </section>
+    <section>
+        <div id="appBar" data-win-control="WinJS.UI.AppBar" data-win-options="">
+            <button data-win-control="WinJS.UI.AppBarCommand"
+                    data-win-options="{id:'cmdSend', label:'Send', icon:'send', section:'primary', tooltip:'Send video id to VHaloPlay'}"></button>
+        </div>
+    </section>
 </body>
 </html>
